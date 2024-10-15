@@ -1,0 +1,201 @@
+
+.no-spinner::-webkit-inner-spin-button, 
+.no-spinner::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+.no-spinner {
+  -moz-appearance: textfield;
+}
+
+.edit {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.area {
+    margin: 10px;
+    border: 2px solid gray;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: gray;
+    display: flex;
+    justify-content: space-between;
+    width: 60%; 
+    max-width: 600px; 
+    flex-wrap: wrap; 
+}
+
+.label {
+    font-size: 22px;
+    color: wheat;
+    font-weight: bolder;
+}
+
+.area > input {
+    padding: 5px;
+    border-radius: 5px;
+    width: 50%;
+    max-width: 300px; 
+    color: black;
+}
+
+.save {
+    padding: 10px;
+    background-color: deepskyblue;
+    font-size: large;
+    border-radius: 10px;
+    margin-left: auto; 
+    margin-right: auto; 
+    text-align: center; 
+    width: 10vw; 
+    min-width: 100px; 
+    max-width: 150px;
+}
+
+@media (max-width: 1024px) {
+    .area {
+        width: 70%; 
+    }
+
+    .area > input {
+        width: 40%; 
+    }
+    /* .contact-input
+    {
+        width: 100%;
+    }
+    .contact-input span
+    {
+        width: 40%;
+    }
+    .contact-input input
+    {
+        width: 60%;
+    } */
+
+    .save {
+        width: 20vw; 
+    }
+    .label {
+        font-size: 20px; 
+    }
+}
+
+@media (max-width: 768px) {
+    .area {
+        width: 90%; 
+    }
+
+    .area > input {
+        width: 60%; 
+    }
+
+    .save {
+        width: 30vw; 
+    }
+    .label {
+        font-size: 18px; 
+    }
+}
+
+@media (max-width: 480px) {
+    .area {
+        width: 100vw; 
+        flex-direction: column; 
+        align-items: flex-start;
+    }
+
+    .label {
+        margin-bottom: 10px; 
+        font-size: 16px; 
+    }
+
+    .area > input {
+        width: 100%; 
+    }
+
+    .save {
+        width: 80vw;
+        margin-left: 0; 
+    }
+}
+
+.contact-input {
+    display: flex;
+    align-items: center;
+    width: 100%; /* Full width for better responsiveness */
+    max-width: 400px; /* Optional: cap the width at 400px for larger screens */
+    margin: 0 auto;
+}
+
+/* Styling the span to look like part of the input */
+.contact-input span {
+    background-color: white;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-right: none; /* Remove the right border to join with the input */
+    border-radius: 5px 0 0 5px;
+    font-family: Arial, sans-serif;
+    flex-basis: 25%; /* Make span take up 25% of the total space */
+    text-align: center; /* Center the content inside the span */
+    color: black;
+}
+
+/* Styling the input field */
+.contact-input input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 0 5px 5px 0; /* Rounded corners only on the right */
+    flex-basis: 75%; /* Input takes up 75% of the total space */
+    font-size: 16px;
+    border-left: none; /* To remove the left border and join with the span */
+    color: black;
+    width: 100%;
+}
+
+/* Responsive font size */
+.contact-input input, .contact-input span {
+    font-size: 18px;
+}
+
+/* Extra responsiveness for smaller screens */
+@media (max-width: 768px) {
+    .contact-input span {
+        flex-basis: 35%; /* Span takes more space on smaller screens */
+    }
+
+    .contact-input input {
+        flex-basis: 65%; /* Input takes slightly less space */
+    }
+}
+
+@media (max-width: 600px) {
+    .contact-input {
+        flex-direction: column; /* Stack the span and input vertically on small screens */
+        width: 100%; /* Ensure full width on smaller screens */
+    }
+
+    .contact-input span {
+        flex-basis: 100%;
+        border-radius: 5px 5px 0 0; /* Rounded corners on the top */
+        text-align: left; /* Align text to the left */
+        padding: 8px;
+    }
+
+    .contact-input input {
+        flex-basis: 100%;
+        border-radius: 0 0 5px 5px; /* Rounded corners at the bottom */
+        padding: 8px;
+    }
+
+    /* Adjust font size for smaller screens */
+    .contact-input input, .contact-input span {
+        font-size: 14px;
+    }
+}

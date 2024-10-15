@@ -1,0 +1,201 @@
+
+
+.fixed{
+    position: sticky;
+    top:0;
+    z-index: 1;
+   
+}
+nav {
+    height: 80px;
+    background-color: white;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+   
+    z-index: 10;
+    border-bottom: 3px solid #408697;
+    
+}
+
+nav ul {
+    float: right;
+    margin-right: 25px;
+    font-size: 25px;
+
+}
+
+nav ul li {
+    display: inline;
+    line-height: 20px;
+    margin: 0 2px;
+    font-size: 16px;
+
+}
+
+#topic {
+    font-size: 25px;
+    text-decoration: underline;
+}
+
+nav label i {
+    font-size: 24px;
+    color: #408697;
+    display: inline-block;
+    cursor: pointer;
+}
+
+#list {
+    border: 1px dotted black;
+    overflow-y: scroll;
+}
+
+#list::-webkit-scrollbar {
+    display: none;
+}
+
+#list {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+#cancle {
+    display: none;
+}
+
+label #btn {
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    display: none;
+    /* size: 100px 100px; */
+    height: 50px;
+    width: 50px;
+}
+
+label #cancle {
+    float: left;
+    line-height: 80px;
+    margin-right: 40px;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+#profile {
+    height: 50px;
+    float: right;
+    margin-right: -100px;
+    margin-top: 12px;
+}
+
+@media(max-width:1118px) {
+    nav p {
+        left: 8%;
+    }
+}
+
+@media(max-width:944px) {
+    nav p {
+        left: 6%;
+        top: 20px;
+        width: 130px;
+    }
+}
+
+label #btn {
+    display: block;
+    float: left;
+
+}
+
+#lname {
+    margin-left: 33px;
+    margin-top: 8px;
+}
+
+#list {
+    background-color: rgba(255, 255, 255, 0.048);
+    backdrop-filter: blur(10px);
+}
+
+nav ul {
+    position: fixed;
+    width: 40vb;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.977);
+
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all 0.5s;
+    overflow-y: scroll;
+}
+
+nav ul li {
+    display: block;
+    margin: 5px 40px;
+    line-height: 30px;
+    text-align: start;
+}
+
+#check:checked~ul {
+    left: 0%;
+}
+
+#check:checked~label #btn {
+    display: none;
+}
+
+#check:checked~label #cancle {
+    display: block;
+}
+
+#btn,
+#cancle {
+
+    margin-left: 29px;
+
+}
+
+#modebtn {
+    float: right;
+    margin-right: 109px;
+    margin-top: 26px;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+li {
+    font-size: 23px;
+    font-weight: bold;
+}
+
+#login {
+    background-color: #408697;
+    width: 66px;
+    float: right;
+    margin-right: -110px;
+    margin-top: 22px;
+    cursor: pointer;
+    height: 35px;
+    border-radius: 7px;
+    color: white;
+}
+
+#profile {
+    margin-top: 20px;
+    height: 40px;
+    border-radius: 50px;
+}
+
+nav p {
+    position: absolute;
+    top: 17px;
+    left: 35px;
+    width: 150px;
+    font-size: 26px;
+    color: #408697;
+}

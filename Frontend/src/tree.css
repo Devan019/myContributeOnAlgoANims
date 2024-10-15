@@ -1,0 +1,46 @@
+
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background: beige;
+  overflow-x: hidden;
+}
+.main{
+  z-index: 2;
+  position: relative;
+}
+
+canvas {
+  position: absolute;
+  height: 70%;
+  width: 100%;
+  /* left: 50%; Center horizontally */
+  transform: scale(1.5); /* Adjust the scale */
+  transform-origin:top center;
+  z-index: 1;
+}
+
+/* Media query for smaller screens (phones) */
+@media (max-width: 768px) {
+  canvas {
+    transform: scale(1); /* Adjust scale for smaller screens */
+    left: 0%;
+    width: 100%;
+    transform-origin: top center;
+  }
+}
+
+@media (max-width: 600px) {
+  canvas {
+    transform: scale(1.6); /* Adjust scale for smaller screens */
+    left: 10%;
+    width: 60%;
+    transform-origin: top center;
+  }
+}

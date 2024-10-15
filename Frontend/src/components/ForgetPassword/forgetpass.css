@@ -1,0 +1,11 @@
+.logo-forget{
+    width: 100px;
+    height: 100px;
+    position: relative;
+}
+.logo-forget img{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50% , -50%);
+}

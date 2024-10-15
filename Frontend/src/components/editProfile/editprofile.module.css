@@ -1,0 +1,181 @@
+/* 
+.profiledetails
+{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.profilePic
+{
+    width: 80px;  
+    height: 80px;
+    border-radius: 50%;
+    background-color: blueviolet;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    font-weight: bolder;
+}
+
+.profileUser
+{
+    font-size: 24px;
+}
+ */
+
+ .profile {
+    background-color: #2C2B30;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    padding: 9px;
+    justify-content: space-around;
+    color: #EAEAEA;
+    overflow: auto;
+    box-sizing: border-box;
+  }
+  
+  .leftedit {
+    height: 100vh;
+    background-color: #3E3D42;
+    width: 26vw;
+    border-radius: 10px;
+    padding: 0.5rem;
+    color: antiquewhite;
+    word-break: keep-all;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .profiledetails {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .profilePic {
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: blueviolet;
+    border-radius: 50%;
+    font-weight: bolder;
+    font-size: 50px;
+    width: 100px;
+    height: 100px;
+    aspect-ratio: 1 / 1;
+  }
+  
+  .profileUser {
+    font-size: 25px;
+    padding: 5px;
+    width: 60%;
+    color: #EAEAEA;
+  }
+  
+  .changeOptions {
+    margin-top: 20px;
+    background-color: #2C2B30;
+    padding: 10px;
+    border-radius: 10px;
+    
+    
+  }
+  
+  .changeHeader {
+    font-size: 22px;
+    margin-bottom: 10px;
+    font-weight: bolder;
+    text-align: center;
+  }
+  
+.editOptions
+{
+    padding: 20px;
+    border: 2px solid gray;
+    font-size: 18px;
+    border-radius: 10px;
+    margin: 9px;    
+}
+
+  .rightedit {
+    background-color: #3E3D42;
+    height: 100vh;
+    width: 71vw;
+    border-radius: 10px;
+    height: 100%;
+    overflow: auto;
+  }
+  
+  /* Media Queries for responsiveness */
+  @media (max-width: 1024px) {
+    .leftedit {
+      width: 35vw;
+    }
+  
+    .right {
+      width: 60vw;
+    }
+  
+    .profilePic {
+      width: 40%;
+      height: 40%;
+      font-size: 40px;
+    }
+  
+    .profileUser {
+      font-size: 20px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .profile {
+      flex-direction: column;
+      height: auto;
+    }
+  
+    .leftedit, .rightedit {
+      width: 90vw;
+      margin-bottom: 20px;
+    }
+  
+    .profilePic {
+      width: 30%;
+      height: 30%;
+      font-size: 35px;
+    }
+  
+    .profileUser {
+      font-size: 22px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .leftedit, .rightedit {
+      width: 100vw;
+      padding: 10px;
+    }
+  
+    .profiledetails {
+      flex-direction: column;
+    }
+  
+    .profilePic {
+      width: 25px;
+      height: 25px;
+      font-size: 20px;
+    }
+  
+    .profileUser {
+      font-size: 18px;
+    }
+  }
